@@ -1,0 +1,60 @@
+<html>
+  <head>
+    <title>CS4241 Assignment 5: AJAX </title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="scripts.js"></script>
+  </head>
+
+  <body>
+    <div class = "background">
+        <div class = "header">
+            <br><br><br>
+            <div class = "blocker">
+                <h1><u><b><i>Movie Search!</i></u></b></h1>
+
+                <div class ="movieList">
+                     
+                    <!-- SEARCH!!! -->
+                    <form action="javascript:handleSearch()">
+                        <input class="searcher" type="text" id="search" autocomplete="off"/>
+                        <button class="btn-default" type="submit">Search</button>
+                    </form>
+
+                    
+                    <!-- ADD!!! -->
+                    <form action="javascript:addMovie()">
+                        <input type="text" id="title" placeholder="Title" size="14" />
+                        <input class ="rating" type="text" id="rating" placeholder="/10" size="1" />
+                        <button class="btn-default" type="submit">Add</button>
+                    </form>
+
+
+                     <!-- DELETE!!! -->
+                    <form action="javascript:delMovie()">
+                        <input type="text" id="title" placeholder="Title" size="14" />
+                        <button class="btn-default" type="submit">Delete</button>
+                    </form>
+
+
+                     <!-- JS EVENT HEADER -->
+                    <h3 id="importantOutput"><b>Movie List</b></h3>
+
+
+                    <!-- Populate list from server.js -->
+                    <ul id="movieList">
+                       
+                    </ul>
+
+
+                    <!-- Load page -->
+                    <script>javascript:loadPage()</script>
+
+                </div>
+            </div>
+        </div>
+    </div>
+   
+  </body>
+  
+</html>
