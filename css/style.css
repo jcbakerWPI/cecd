@@ -1,0 +1,325 @@
+
+div.bg { 
+    width: 100%;
+    height: 100%;
+}
+
+div.header {
+    height: 120px;
+    width: 900px;
+    /*
+    border-width: 2px;
+    border-style: solid;
+    border-color: blue;
+    */
+}
+
+div.rounded {
+    width: 950px;
+    height: 1600px;
+    border-radius: 20px;
+    border-style: solid;
+    border-width: 5px;
+    background-color: white;
+    border-color: olivedrab;
+    text-align: left;
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+div.story_rounded {
+    width: 950px;
+    height: 1200px;
+    border-radius: 20px;
+    border-style: solid;
+    border-width: 5px;
+    background-color: white;
+    border-color: olivedrab;
+    text-align: left;
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+div.preview_rounded {
+    width: 950px;
+    height: 1400px;
+    border-radius: 20px;
+    border-style: solid;
+    border-width: 5px;
+    background-color: white;
+    border-color: olivedrab;
+    text-align: left;
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+div.preview_box {
+    width: 800px;
+    height: 900px;
+    border-style: solid;
+    border-width: 2px;
+    background-color: white;
+    border-color: grey;
+    text-align: left;
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+div.left-logo {
+    
+    margin: 10px;
+    text-align: left;
+}
+
+div.right-logo {
+   
+    margin: 10px;
+    text-align: right;
+}
+
+div.title {
+    text-align: center;
+    font-family: 'Arvo', serif;
+
+    font-size: 28;
+}
+
+p.ct {
+    font-family: 'Alegreya Sans SC'; font-size: inherit;
+}
+
+body {
+    background-color: lightgray;
+}
+
+td.left {
+    width: 30%;
+    margin: 15px;
+    text-align: left;
+}
+
+td.right {
+    width: 30%;
+    margin: 15px;
+    text-align: right;
+}
+
+td.middle {
+    width: 40%;
+    text-align: center;
+    margin: 15px;
+}
+
+tr {
+    width: 100%;
+    text-align: center;
+}
+
+div.steps {
+    flex: 1;
+    text-align: left;
+    font-size: 18px;
+}
+
+p.goal {
+    font-size: 20px;
+    text-align: center;
+}
+
+p.initialSteps {
+    font-size: 18px;
+    text-align: left;
+}
+
+table {
+    border-bottom-width: 1px;
+    border-bottom-color: grey;
+    border-bottom-style: solid;
+}
+
+table.notNormal {
+    border-bottom-width: 0px;
+}
+
+div.leftalign {
+    text-align: left;
+}
+
+
+
+/* FORM STUFF */
+
+.form-style-1 {
+    margin:5px auto;
+    max-width: 400px;
+    padding: 0px 12px 10px 0px;
+    font: 13px "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    text-align: left;
+}
+
+.form-style-JB {
+    margin:5px auto;
+    max-width: 400px;
+    padding: 0px 12px 10px 0px;
+    font: 13px "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    text-align: center;
+}
+.form-style-1 li {
+    padding: 0;
+    display: block;
+    list-style: none;
+    margin: 10px 0 0 0;
+}
+.form-style-1 label{
+    margin:0 0 3px 0;
+    padding:0px;
+    display:block;
+    font-weight: bold;
+}
+.form-style-1 input[type=text], 
+.form-style-1 input[type=date],
+.form-style-1 input[type=datetime],
+.form-style-1 input[type=number],
+.form-style-1 input[type=search],
+.form-style-1 input[type=time],
+.form-style-1 input[type=url],
+.form-style-1 input[type=email],
+textarea, 
+select{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    border:1px solid #BEBEBE;
+    padding: 7px;
+    margin:0px;
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
+    outline: none;  
+}
+.form-style-1 input[type=text]:focus, 
+.form-style-1 input[type=date]:focus,
+.form-style-1 input[type=datetime]:focus,
+.form-style-1 input[type=number]:focus,
+.form-style-1 input[type=search]:focus,
+.form-style-1 input[type=time]:focus,
+.form-style-1 input[type=url]:focus,
+.form-style-1 input[type=email]:focus,
+.form-style-1 textarea:focus, 
+.form-style-1 select:focus{
+    -moz-box-shadow: 0 0 8px #88D5E9;
+    -webkit-box-shadow: 0 0 8px #88D5E9;
+    box-shadow: 0 0 8px #88D5E9;
+    border: 1px solid #88D5E9;
+}
+.form-style-1 .field-divided{
+    width: 49%;
+}
+
+.form-style-1 .field-long{
+    width: 100%;
+}
+.form-style-1 .field-select{
+    width: 100%;
+}
+.form-style-1 .field-textarea{
+    height: 100px;
+}
+.form-style-1 input[type=submit], .form-style-1 input[type=button]{
+    background: #4B99AD;
+    padding: 8px 15px 8px 15px;
+    border: none;
+    color: #fff;
+}
+.form-style-1 input[type=submit]:hover, .form-style-1 input[type=button]:hover{
+    background: #4691A4;
+    box-shadow:none;
+    -moz-box-shadow:none;
+    -webkit-box-shadow:none;
+}
+.form-style-1 .required{
+    color:red;
+}
+
+
+.form-style-2 .tel-number-field{
+    width: 40px;
+    text-align: center;
+}
+
+/* END FORM STUFF */
+
+span.purple {
+    background-color: #D393FF;
+}
+
+span.blue {
+    background-color: #22C4FF;
+}
+
+
+span.green {
+    background-color: #04CC75;
+}
+
+
+span.orange {
+    background-color: #FFB728;
+
+}
+
+hr {
+    size:2;
+}
+
+span.purpletxt {
+    color: #D393FF;
+}
+
+span.bluetxt {
+    color: #22C4FF;
+}
+
+
+span.greentxt {
+    color: #04CC75;
+}
+
+
+span.orangetxt {
+    color: #FFB728;
+
+}
+
+p.story {
+    font-size: 17px;
+}
+
+@font-face {
+    font-family: "My Custom Font";
+    src: url(http://www.example.org/mycustomfont.ttf) format("truetype");
+}
+
+p.customfont { 
+    font-family: "My Custom Font", Verdana, Tahoma;
+}

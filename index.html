@@ -1,60 +1,148 @@
-<html>
+<html lang="en">
   <head>
-    <title>CS4241 Assignment 5: AJAX </title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <script src="scripts.js"></script>
+    <title>Cape Town Museum of Childhood Story Toolkit</title>
+    <meta charset="utf-8">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
+
+    <script src="js/scripts.js"></script>
   </head>
-
   <body>
-    <div class = "background">
-        <div class = "header">
-            <br><br><br>
-            <div class = "blocker">
-                <h1><u><b><i>Movie Search!</i></u></b></h1>
-
-                <div class ="movieList">
-                     
-                    <!-- SEARCH!!! -->
-                    <form action="javascript:handleSearch()">
-                        <input class="searcher" type="text" id="search" autocomplete="off"/>
-                        <button class="btn-default" type="submit">Search</button>
-                    </form>
-
-                    
-                    <!-- ADD!!! -->
-                    <form action="javascript:addMovie()">
-                        <input type="text" id="title" placeholder="Title" size="14" />
-                        <input class ="rating" type="text" id="rating" placeholder="/10" size="1" />
-                        <button class="btn-default" type="submit">Add</button>
-                    </form>
-
-
-                     <!-- DELETE!!! -->
-                    <form action="javascript:delMovie()">
-                        <input type="text" id="title" placeholder="Title" size="14" />
-                        <button class="btn-default" type="submit">Delete</button>
-                    </form>
-
-
-                     <!-- JS EVENT HEADER -->
-                    <h3 id="importantOutput"><b>Movie List</b></h3>
-
-
-                    <!-- Populate list from server.js -->
-                    <ul id="movieList">
-                       
-                    </ul>
-
-
-                    <!-- Load page -->
-                    <script>javascript:loadPage()</script>
-
-                </div>
-            </div>
-        </div>
-    </div>
-   
-  </body>
+    <div class ="bg">
+      <div class ="rounded">
   
+        <div class="header">
+          <table style="width: 100%;">
+            <tr>
+              <td class = "left">
+                <div class ="left-logo">
+                  <!--sjhdssdfsfdsfsfsfdsfsdfsfs-->
+                  <!--<img src="images/cecd.jpg">-->
+                </div>
+              </td>
+              <td class = "middle">
+                <div class ="title">
+                  Cape Town Museum of Childhood<br> Story Collection Toolkit
+                </div>
+              </td>
+            <td class = "right">
+              <div class = "right-logo">
+                 <!--sjhdssdfsfdsfsfsfdsfsdfsfs-->
+                <!--<img src="images/ct.png">-->
+              </div>
+            </td>
+            </tr>
+          </table>
+        </div>
+
+        <hr>
+
+        <div class ="steps">
+         
+
+         <p class = "initialSteps">
+           <b>Please enter some basic information:</b>
+
+           <div class = "leftalign">
+
+           <form>
+            <ul class="form-style-1">
+    <li><label>Full Name <span class="required">*</span></label><input type="text" name="field1" class="field-divided" placeholder="First" />&nbsp;<input type="text" name="field2" class="field-divided" placeholder="Last" /></li>
+    <li>
+        <label>Email <span class="required">*</span></label>
+        <input type="email" name="field3" class="field-long" />
+    </li>
+    
+    <li>
+        <label>How old are you? <span class="required">*</span></label>
+        <input type="text" name="field4" class="field-divided" />
+    </li>
+    <li>
+        <label>Where did you grow up? <span class="required">*</span></label>
+        <input type="text" name="field5" class="field-long" />
+    </li>
+      <li>
+        <input type="submit" value="Save" />
+    </li>
+      </ul>
+            </form>
+         </p>
+          </div>
+         <hr></hr>
+         <p class = "initialSteps">
+           <b>Here are some questions to get you thinking:</b>
+           <ul>
+             <li>How would you describe a perfect or typical day when you were young?</li>
+             <li class = "list-group-item-left">What is your favorite memory from your childhood?</li>
+             <li class = "list-group-item-left">Is there a memory (good or bad) that stands out from your childhood and why does it stand out?</li>
+             <li class = "list-group-item-left">What were some of the biggest challenges in your childhood, if any?</li>
+             <li class = "list-group-item-left">What was your relationship with your parents like as a child?</li>
+             <li class = "list-group-item-left">Did you get into trouble when you were a kid?</li>
+             <li class = "list-group-item-left">What was your education like?</li>
+             <li class = "list-group-item-left">Was there a teacher or teachers who had a particularly strong influence on your life? Elaborate.</li>
+           </ul>
+         </p>
+
+         <hr></hr>
+
+         <p class = "initialSteps">
+           <b>Steps:</b>
+           <ol type="1">
+             <li class = "list-group-item-left">What is the main point of the story that you wish to share?</span></li>
+             <li class = "list-group-item-left">Write a 250-500 word script of your story</li>
+             <ol type="a">
+               <li class = "list-group-item-left">About 1 handwritten page</li>
+             </ol>
+              <li class = "list-group-item-left">Help the reader relate to your experience</li>
+              <ol type="a">
+               <li class = "list-group-item-left">Paint a picture for the reader (who you are, how old you are, where you're from, etc.)</span></li>
+               <li class = "list-group-item-left">Tell us important information in your story to show your emotions (were you angry, happy, sad, etc.?)</span></li>
+               <li class = "list-group-item-left">Include additional details to explain what is happening in your story</span></li>
+             </ol>
+              <li class = "list-group-item-left">Write the way you speak</li>
+              <ol type="a">
+               <li class = "list-group-item-left">Write the story as if you were talking to a friend</li>
+              </ol>
+               <li class = "list-group-item-left">Read it to a family member or trusted friend</li>
+              <ol type="a">
+               <li class = "list-group-item-left">Ask the question “Does this sound like me?”</li>
+               <li class = "list-group-item-left">When read out loud, the story should be no longer than 5 minutes long </li>
+              </ol>
+           </ol>
+            <b><p style="font-size:14px;">*Note, the highlighted colors correspond to their placement in the example story below.</p></b>
+            <a href="story.html">
+              <input type="submit" value="Example Story" />
+            </a>
+         </p>
+        
+         
+            <hr></hr>
+
+           <p style="text-align: left">
+             
+           <form>
+             <ul class="form-style-1">
+             <li>
+        <label>Your story <span class="required">*</span></label>
+        <textarea cols="100" rows="6" name="field5" id="field5" class="field-long"></textarea>
+    </li>
+    <li>
+      <input type="submit" value="Preview" onclick="location.href='preview.html';"/>
+      <a href="preview.html">ACTUAL PREVIEW CLICK THIS PLEASE</a>
+    </li>
+      <p style="font-size:11px;">*Note, it is recommended to write your story in a separate document then copy and paste the contents into the box above.</p>
+      </ul>
+      </form>
+
+           </p>
+          
+        </div>
+
+    </div>
+    </div>
+
+
+  </body>
 </html>
