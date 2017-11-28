@@ -28,11 +28,11 @@ var server = http.createServer (function (req, res) {
     case '/js/scripts.js':
       sendFile(res, 'public/js/scripts.js', 'text/javascript')
       break
-    case '/images/UZI.jpg':
-      sendFile(res, 'public/images/UZI.jpg', 'image/jpg')
+    case '/images/cecd.jpg':
+      sendFile(res, 'public/images/cecd.jpg', 'image/jpg')
       break
-    case '/images/BIRS.jpg':
-      sendFile(res, 'public/images/BIRS.jpg', 'image/jpg')
+    case '/images/ct.png':
+      sendFile(res, 'public/images/ct.png', 'image/ppng')
       break
     case '/images/culture.jpg':
       sendFile(res, 'public/images/culture.jpg', 'image/jpg')
