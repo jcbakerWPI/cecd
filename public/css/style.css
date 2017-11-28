@@ -7,11 +7,7 @@ div.bg {
 div.header {
     height: 120px;
     width: 900px;
-    /*
-    border-width: 2px;
-    border-style: solid;
-    border-color: blue;
-    */
+s
 }
 
 div.rounded {
@@ -129,19 +125,19 @@ body {
 }
 
 td.left {
-    width: 30%;
+    width: 20%;
     margin: 15px;
     text-align: left;
 }
 
 td.right {
-    width: 30%;
+    width: 20%;
     margin: 15px;
     text-align: right;
 }
 
 td.middle {
-    width: 40%;
+    width: 60%;
     text-align: center;
     margin: 15px;
 }
