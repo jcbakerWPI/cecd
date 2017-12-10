@@ -7,7 +7,6 @@ div.bg {
 div.header {
     height: 120px;
     width: 900px;
-s
 }
 
 div.rounded {
@@ -184,7 +183,7 @@ div.leftalign {
 .form-style-1 {
     margin:5px auto;
     max-width: 400px;
-    padding: 0px 12px 10px 0px;
+    padding: 0px 12px 0px 0px;
     font: 13px "Lucida Sans Unicode", "Lucida Grande", sans-serif;
     text-align: left;
 }
@@ -335,4 +334,16 @@ p.story {
 
 p.customfont { 
     font-family: "My Custom Font", Verdana, Tahoma;
+}
+
+div.formBox{
+    width: 400px;
+    height: 300px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+input.submit {
+    width: 135px;
+    height: auto;
 }
