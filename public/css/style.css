@@ -8,6 +8,7 @@ div.header {
     height: 120px;
     width: 900px;
 }
+/*'Rounded' divs are for the different rounded box sizes of each page*/
 
 div.rounded {
     width: 950px;
@@ -93,6 +94,7 @@ div.preview_box {
     margin-top: 10px;
     display: flex;
     flex-direction: column;
+    font-size: 130%;
 
 }
 
@@ -281,6 +283,7 @@ select{
 
 /* END FORM STUFF */
 
+/*Colors for example story*/
 span.purple {
     background-color: #D393FF;
 }
